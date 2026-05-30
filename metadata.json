@@ -1,0 +1,6 @@
+{
+  "name": "Jyoti Electricals",
+  "description": "Premium multi-brand consumer electronics catalog, smart bento diagnostics booking, and professional copper-grade repair services for AC, cooling, power backup, and MPPT solar charging units.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

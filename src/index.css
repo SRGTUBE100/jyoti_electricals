@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..700&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,400..800&family=Space+Grotesk:wght@400..700&family=JetBrains+Mono:wght@400..700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Cinzel", "Space Grotesk", sans-serif;
+  --font-serif: "Cormorant Garamond", "Georgia", serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-copper-50: #0f0e0d;
+  --color-copper-100: #1c1915;
+  --color-copper-500: #c5a059;
+  --color-copper-600: #9a7b43;
+  --color-copper-700: #7b6232;
+  
+  --color-electric-50: #101115;
+  --color-electric-100: #151a2d;
+  --color-electric-500: #4f6cf7;
+  --color-electric-600: #3b52d9;
+  --color-electric-700: #293ca6;
+}
+
+/* Global Dark Editorial Overrides */
+body {
+  background-color: #080808 !important;
+  color: #f3f3f3 !important;
+  font-family: var(--font-sans);
+}
+
+/* Styling translation layer to enforce a unified high-fashion editorial look across existing markup */
+.bg-white {
+  background-color: #121212 !important;
+}
+.bg-slate-50 {
+  background-color: #0b0b0b !important;
+}
+.bg-slate-100 {
+  background-color: #181818 !important;
+}
+.bg-slate-200 {
+  background-color: #242424 !important;
+}
+.bg-slate-900 {
+  background-color: #050505 !important;
+}
+
+.text-slate-950, .text-slate-900, .text-slate-800 {
+  color: #f3f3f3 !important;
+}
+.text-slate-705, .text-slate-700, .text-slate-600 {
+  color: #cccccc !important;
+}
+.text-slate-500, .text-slate-400 {
+  color: #8c8c8c !important;
+}
+
+.border-slate-100, .border-slate-200, .border-slate-300, .border-slate-200\/60, .border-slate-200\/50, .border-slate-100\/80 {
+  border-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+/* Interactive elements */
+.hover\:bg-slate-100:hover {
+  background-color: rgba(255, 255, 255, 0.04) !important;
+}
+.hover\:bg-slate-50:hover {
+  background-color: rgba(255, 255, 255, 0.02) !important;
+}
+.hover\:border-slate-300:hover {
+  border-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+/* Custom premium styles */
+.glass-panel {
+  background: rgba(10, 10, 10, 0.8) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.06) !important;
+}
+
+.dark-glass-panel {
+  background: rgba(5, 5, 5, 0.9) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.06) !important;
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, var(--color-copper-500) 0%, var(--color-electric-500) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Premium Editorial Borders & Dividers */
+.editorial-line {
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.08);
+  width: 100%;
+}
+
+.editorial-tag {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-copper-500);
+}
+
+.editorial-serif-heading {
+  font-family: var(--font-serif);
+  font-weight: 300;
+  letter-spacing: -0.01em;
+}
+
+/* Interactive flat outlined/inverted buttons */
+.editorial-button-primary {
+  background: #f3f3f3 !important;
+  color: #080808 !important;
+  border: 1px solid #f3f3f3 !important;
+  font-family: var(--font-sans);
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.editorial-button-primary:hover {
+  background: transparent !important;
+  color: #f3f3f3 !important;
+}
+
+.editorial-button-secondary {
+  background: transparent !important;
+  color: #f3f3f3 !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  font-family: var(--font-sans);
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.editorial-button-secondary:hover {
+  background: #f3f3f3 !important;
+  color: #080808 !important;
+  border-color: #f3f3f3 !important;
+}
+

@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      // Safe dynamic interceptor for window.fetch to prevent iframe runtime environment crashes
+      (function() {
+        try {
+          var original = window.fetch;
+          var fetchProp = original;
+          Object.defineProperty(window, 'fetch', {
+            configurable: true,
+            enumerable: true,
+            get: function() { return fetchProp; },
+            set: function(val) { fetchProp = val; }
+          });
+        } catch (e) {
+          console.warn("Soft patch ignored:", e);
+        }
+      })();
+    </script>
+    
+    <!-- SEO Meta Tags for Top Search Performance -->
+    <title>Jyoti Electricals | Kaimganj Showroom &amp; Copper Repair Desk</title>
+    <meta name="description" content="Kaimganj's premier electrical showroom. High-speed copper ceiling fans, heavy-duty desert coolers, microcomputer stabilizers, and genuine mixer/washing machine spares. Professional 100% pure copper motor rewinding &amp; HVAC pickup repairs." />
+    <meta name="keywords" content="Jyoti Electricals Kaimganj, copper rewinding Kaimganj, stabilizer repair, mixer jar spares, ceiling fans, desert coolers, electrical shop Kaimganj, Vijay Rathore, Ajay Rathore Kaimganj" />
+    <meta name="author" content="Jyoti Electricals" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://ais-pre-u6h3ma3zckyflfgb3cshci-939577708253.asia-southeast1.run.app" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ais-pre-u6h3ma3zckyflfgb3cshci-939577708253.asia-southeast1.run.app" />
+    <meta property="og:title" content="Jyoti Electricals | Kaimganj Showroom &amp; Copper Repair Desk" />
+    <meta property="og:description" content="Kaimganj's trusted name since 2005. Explore our copper-wound cooling fans, heavy desert coolers, stabilizers, and genuine replacement spares with offline showroom carry-out booking." />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1622324706596-f046e7f86414?auto=format&fit=crop&w=1200&h=630&q=80" />
+    <meta property="og:site_name" content="Jyoti Electricals Kaimganj" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://ais-pre-u6h3ma3zckyflfgb3cshci-939577708253.asia-southeast1.run.app" />
+    <meta property="twitter:title" content="Jyoti Electricals | Kaimganj Showroom" />
+    <meta property="twitter:description" content="Shop 100% thick copper windings, heavy-duty cooling appliances, and genuine appliance spares with verified local experts in Kaimganj." />
+    <meta property="twitter:image" content="https://images.unsplash.com/photo-1622324706596-f046e7f86414?auto=format&fit=crop&w=1200&h=630&q=80" />
+
+    <!-- Google Local Business Schema for Elite Local SEO -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Jyoti Electricals",
+        "image": "https://images.unsplash.com/photo-1622324706596-f046e7f86414?auto=format&fit=crop&w=1200&h=630&q=80",
+        "@id": "https://ais-pre-u6h3ma3zckyflfgb3cshci-939577708253.asia-southeast1.run.app/#store",
+        "url": "https://ais-pre-u6h3ma3zckyflfgb3cshci-939577708253.asia-southeast1.run.app",
+        "telephone": "+91-9450000000",
+        "priceRange": "₹₹",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Railway Road",
+          "addressLocality": "Kaimganj",
+          "addressRegion": "Uttar Pradesh",
+          "postalCode": "209724",
+          "addressCountry": "IN"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "27.5683",
+          "longitude": "79.3496"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "09:00",
+          "closes": "21:00"
+        },
+        "sameAs": []
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
